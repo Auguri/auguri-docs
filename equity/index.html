@@ -247,6 +247,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#auguri.equity.filter_stocks" class="md-nav__link">
+    filter_stocks()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.equity.get_exchanges" class="md-nav__link">
+    get_exchanges()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.equity.get_filters" class="md-nav__link">
+    get_filters()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.equity.get_symbols" class="md-nav__link">
+    get_symbols()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#auguri.equity.get_ticker" class="md-nav__link">
     get_ticker()
   </a>
@@ -323,6 +351,34 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#auguri.equity.filter_stocks" class="md-nav__link">
+    filter_stocks()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.equity.get_exchanges" class="md-nav__link">
+    get_exchanges()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.equity.get_filters" class="md-nav__link">
+    get_filters()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.equity.get_symbols" class="md-nav__link">
+    get_symbols()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#auguri.equity.get_ticker" class="md-nav__link">
     get_ticker()
   </a>
@@ -349,6 +405,147 @@
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="auguri.equity.filter_stocks">
+
+<code class="highlight language-python"><span class="n">filter_stocks</span><span class="p">(</span><span class="nb">filter</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
+
+
+      </h2>
+<div class="doc doc-contents ">
+<p>Apply the given filter to screen stocks.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>filter</code></td>
+<td><code>str</code></td>
+<td>
+<p>Filter name.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>size</code></td>
+<td><code>int</code></td>
+<td>
+<p>If set, limit the maximum size of the result. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Dict</code></td>
+<td>
+<p>Dict: [description]</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="auguri.equity.get_exchanges">
+
+<code class="highlight language-python"><span class="n">get_exchanges</span><span class="p">()</span></code>
+
+
+      </h2>
+<div class="doc doc-contents ">
+<p>Get all available exchanges.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>DataFrame: Exchanges and related information.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="auguri.equity.get_filters">
+
+<code class="highlight language-python"><span class="n">get_filters</span><span class="p">()</span></code>
+
+
+      </h2>
+<div class="doc doc-contents ">
+<p>Get a list of filters that can be applied to filter stocks.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>List[str]</code></td>
+<td>
+<p>List[str]: A list of usable filters.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="auguri.equity.get_symbols">
+
+<code class="highlight language-python"><span class="n">get_symbols</span><span class="p">()</span></code>
+
+
+      </h2>
+<div class="doc doc-contents ">
+<p>Get all available symbols.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>DataFrame: Symbols and related information.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
 <h2 class="doc doc-heading" id="auguri.equity.get_ticker">
 
 <code class="highlight language-python"><span class="n">get_ticker</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span></code>
@@ -356,7 +553,7 @@
 
       </h2>
 <div class="doc doc-contents ">
-<p>[summary]</p>
+<p>Get the ticker of the given symbol.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -372,7 +569,7 @@
 <td><code>symbol</code></td>
 <td><code>str</code></td>
 <td>
-<p>[description]</p>
+<p>Symbol of the stock.</p>
 </td>
 <td><em>required</em></td>
 </tr>
@@ -390,7 +587,7 @@
 <tr>
 <td><code>Ticker</code></td>
 <td>
-<p>Ticker: [description]</p>
+<p>Ticker: Ticker of the stock.</p>
 </td>
 </tr>
 </tbody>
