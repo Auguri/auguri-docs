@@ -225,6 +225,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    Credits
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -345,6 +359,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#license" class="md-nav__link">
+    License
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credits" class="md-nav__link">
+    Credits
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -361,15 +389,18 @@
                 <h1 id="welcome-to-auguri-docs">Welcome to Auguri Docs<a class="headerlink" href="#welcome-to-auguri-docs" title="Permanent link">&para;</a></h1>
 <p>This is the documentation for project <a href="https://github.com/Auguri/auguri"><code>Auguri</code></a>.</p>
 <h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<p>Access permission to <a href="https://github.com/Auguri/auguri"><code>Auguri</code></a> source code is required.</p>
 <div class="highlight"><pre><span></span><code>git clone git@github.com:Auguri/auguri.git
 pip install ./auguri
 </code></pre></div>
 <h2 id="basic-usages">Basic Usages<a class="headerlink" href="#basic-usages" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">auguri</span>
 
+<span class="c1"># helper functions in auguri.crypto and auguri.equity</span>
 <span class="n">symbols</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">equity</span><span class="o">.</span><span class="n">get_symbols</span><span class="p">()</span>
 <span class="n">exchanges</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">equity</span><span class="o">.</span><span class="n">get_exchanges</span><span class="p">()</span>
 
+<span class="c1"># core class auguri.Ticker provides many data acquisition methods</span>
 <span class="n">ticker</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">Ticker</span><span class="p">(</span><span class="s1">&#39;AAPL&#39;</span><span class="p">)</span>
 <span class="n">history</span> <span class="o">=</span> <span class="n">ticker</span><span class="o">.</span><span class="n">history</span><span class="p">()</span>
 </code></pre></div>
@@ -379,6 +410,10 @@ pip install ./auguri
 <li><a href="equity/">Equity</a></li>
 <li><a href="ticker/">Ticker</a></li>
 </ul>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
+<p>This project is licensed under the terms of the MIT license.</p>
+<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
+<p>Author: Jiyang Chu</p>
                 
               
               
