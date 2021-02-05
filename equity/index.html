@@ -297,6 +297,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#auguri.equity.reset_stock_data_path" class="md-nav__link">
+    reset_stock_data_path()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -389,6 +396,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#auguri.equity.reset_stock_data_path" class="md-nav__link">
+    reset_stock_data_path()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -402,10 +416,10 @@
               
                 
                 
-                <h1 id="module-equity">Module equity</h1>
+                <h1 id="module-equity">Module equity<a class="headerlink" href="#module-equity" title="Permanent link">&para;</a></h1>
 <div class="doc doc-object doc-module">
 <h2 class="hidden-toc" id="auguri.equity" style="visibility: hidden; position: absolute;">
-        </h2>
+        <a class="headerlink" href="#auguri.equity" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <div class="doc doc-object doc-function">
@@ -414,7 +428,7 @@
 <code class="highlight language-python"><span class="n">filter_stocks</span><span class="p">(</span><span class="nb">filter</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 
-      </h2>
+      <a class="headerlink" href="#auguri.equity.filter_stocks" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents ">
 <p>Apply the given filter to screen stocks.</p>
 <p><strong>Parameters:</strong></p>
@@ -471,7 +485,7 @@
 <code class="highlight language-python"><span class="n">get_exchanges</span><span class="p">()</span></code>
 
 
-      </h2>
+      <a class="headerlink" href="#auguri.equity.get_exchanges" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents ">
 <p>Get all available exchanges.</p>
 <p><strong>Returns:</strong></p>
@@ -499,7 +513,7 @@
 <code class="highlight language-python"><span class="n">get_filters</span><span class="p">()</span></code>
 
 
-      </h2>
+      <a class="headerlink" href="#auguri.equity.get_filters" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents ">
 <p>Get a list of filters that can be applied to filter stocks.</p>
 <p><strong>Returns:</strong></p>
@@ -527,7 +541,7 @@
 <code class="highlight language-python"><span class="n">get_symbols</span><span class="p">()</span></code>
 
 
-      </h2>
+      <a class="headerlink" href="#auguri.equity.get_symbols" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents ">
 <p>Get all available symbols.</p>
 <p><strong>Returns:</strong></p>
@@ -555,9 +569,9 @@
 <code class="highlight language-python"><span class="n">get_ticker</span><span class="p">(</span><span class="n">symbol</span><span class="p">)</span></code>
 
 
-      </h2>
+      <a class="headerlink" href="#auguri.equity.get_ticker" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents ">
-<p>Get the ticker of the given symbol.</p>
+<p>Get the <a href="../ticker/#auguri.ticker.Ticker">Ticker</a> of the given symbol.</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -593,6 +607,38 @@
 <td>
 <p>Ticker: Ticker of the stock.</p>
 </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="auguri.equity.reset_stock_data_path">
+
+<code class="highlight language-python"><span class="n">reset_stock_data_path</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">'./stockdata'</span><span class="p">)</span></code>
+
+
+      <a class="headerlink" href="#auguri.equity.reset_stock_data_path" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents ">
+<p>Reset the path to the folder storing stock data. The path can be relative or absolute.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td><code>str</code></td>
+<td>
+<p>The path to the stock data folder. Defaults to './stockdata'.</p>
+</td>
+<td><code>'./stockdata'</code></td>
 </tr>
 </tbody>
 </table>
