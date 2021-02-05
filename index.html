@@ -358,22 +358,22 @@
               
                 
                 
-                <h1 id="welcome-to-auguri-docs">Welcome to Auguri Docs</h1>
-<p>This is the documentation for <a href="https://github.com/Auguri/auguri"><code>Auguri</code></a>.</p>
-<h2 id="install">Install</h2>
-<pre><code class="language-sh">git clone git@github.com:Auguri/auguri.git
+                <h1 id="welcome-to-auguri-docs">Welcome to Auguri Docs<a class="headerlink" href="#welcome-to-auguri-docs" title="Permanent link">&para;</a></h1>
+<p>This is the documentation for project <a href="https://github.com/Auguri/auguri"><code>Auguri</code></a>.</p>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>git clone git@github.com:Auguri/auguri.git
 pip install ./auguri
-</code></pre>
-<h2 id="basic-usages">Basic Usages</h2>
-<pre><code class="language-python">import auguri
+</code></pre></div>
+<h2 id="basic-usages">Basic Usages<a class="headerlink" href="#basic-usages" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">auguri</span>
 
-symbols = auguri.equity.get_symbols()
-exchanges = auguri.equity.get_exchanges()
+<span class="n">symbols</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">equity</span><span class="o">.</span><span class="n">get_symbols</span><span class="p">()</span>
+<span class="n">exchanges</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">equity</span><span class="o">.</span><span class="n">get_exchanges</span><span class="p">()</span>
 
-ticker = auguri.Ticker('AAPL')
-history = ticker.history()
-</code></pre>
-<h2 id="code-references">Code References</h2>
+<span class="n">ticker</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">Ticker</span><span class="p">(</span><span class="s1">&#39;AAPL&#39;</span><span class="p">)</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">ticker</span><span class="o">.</span><span class="n">history</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="code-references">Code References<a class="headerlink" href="#code-references" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="crypto/">Crypto</a></li>
 <li><a href="equity/">Equity</a></li>
