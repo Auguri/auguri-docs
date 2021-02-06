@@ -250,6 +250,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#auguri.crypto.get_daily" class="md-nav__link">
+    get_daily()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.crypto.get_top_coins" class="md-nav__link">
+    get_top_coins()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.crypto.reset_stock_data_path" class="md-nav__link">
+    reset_stock_data_path()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -319,6 +340,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#auguri.crypto.get_daily" class="md-nav__link">
+    get_daily()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.crypto.get_top_coins" class="md-nav__link">
+    get_top_coins()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.crypto.reset_stock_data_path" class="md-nav__link">
+    reset_stock_data_path()
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -337,10 +379,134 @@
 <h2 class="hidden-toc" id="auguri.crypto" style="visibility: hidden; position: absolute;">
         <a class="headerlink" href="#auguri.crypto" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
+<div class="doc doc-children">
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="auguri.crypto.get_daily">
+
+<code class="highlight language-python"><span class="n">get_daily</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 
+      <a class="headerlink" href="#auguri.crypto.get_daily" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents ">
+<p>Get daily history data of the cryptocurrency symbol in the date range.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>symbol</code></td>
+<td><code>str</code></td>
+<td>
+<p>Standard cryptocurrency symbol. Not exchange pairs.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+<tr>
+<td><code>start</code></td>
+<td><code>str</code></td>
+<td>
+<p>Start date of history with format '%Y-%m-%d'. Will be max history if None. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>end</code></td>
+<td><code>str</code></td>
+<td>
+<p>End date of history with format '%Y-%m-%d'. Will be yesterday if None. Defaults to None.</p>
+</td>
+<td><code>None</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>DataFrame: Cryptocurrency daily data sorted by date.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="auguri.crypto.get_top_coins">
 
-    </div>
+<code class="highlight language-python"><span class="n">get_top_coins</span><span class="p">()</span></code>
+
+
+      <a class="headerlink" href="#auguri.crypto.get_top_coins" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents ">
+<p>Get all available cryptocurrency symbols.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>DataFrame: Standard cryptocurrency symbols and names.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-function">
+<h2 class="doc doc-heading" id="auguri.crypto.reset_stock_data_path">
+
+<code class="highlight language-python"><span class="n">reset_stock_data_path</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">'./cryptodata'</span><span class="p">)</span></code>
+
+
+      <a class="headerlink" href="#auguri.crypto.reset_stock_data_path" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents ">
+<p>Reset the path to the folder storing cryptocurrency data. The path can be relative or absolute.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>path</code></td>
+<td><code>str</code></td>
+<td>
+<p>The path to the cryptocurrency data folder. Defaults to './cryptodata'.</p>
+</td>
+<td><code>'./cryptodata'</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
 </div>
                 
               
