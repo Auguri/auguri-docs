@@ -338,15 +338,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#auguri.ticker.Ticker.balance_sheet" class="md-nav__link">
-    balance_sheet()
+  <a href="#auguri.ticker.Ticker.financial_balance_sheet" class="md-nav__link">
+    financial_balance_sheet()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#auguri.ticker.Ticker.cash_flow" class="md-nav__link">
-    cash_flow()
+  <a href="#auguri.ticker.Ticker.financial_cash_flow" class="md-nav__link">
+    financial_cash_flow()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.ticker.Ticker.financial_income_statement" class="md-nav__link">
+    financial_income_statement()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.ticker.Ticker.financial_valuation_measures" class="md-nav__link">
+    financial_valuation_measures()
   </a>
   
 </li>
@@ -513,13 +527,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#auguri.ticker.Ticker.income_statement" class="md-nav__link">
-    income_statement()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#auguri.ticker.Ticker.misc_calendar_events" class="md-nav__link">
     misc_calendar_events()
   </a>
@@ -585,13 +592,6 @@
         <li class="md-nav__item">
   <a href="#auguri.ticker.Ticker.technical_quote_type" class="md-nav__link">
     technical_quote_type()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#auguri.ticker.Ticker.valuation_measures" class="md-nav__link">
-    valuation_measures()
   </a>
   
 </li>
@@ -717,15 +717,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#auguri.ticker.Ticker.balance_sheet" class="md-nav__link">
-    balance_sheet()
+  <a href="#auguri.ticker.Ticker.financial_balance_sheet" class="md-nav__link">
+    financial_balance_sheet()
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#auguri.ticker.Ticker.cash_flow" class="md-nav__link">
-    cash_flow()
+  <a href="#auguri.ticker.Ticker.financial_cash_flow" class="md-nav__link">
+    financial_cash_flow()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.ticker.Ticker.financial_income_statement" class="md-nav__link">
+    financial_income_statement()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.ticker.Ticker.financial_valuation_measures" class="md-nav__link">
+    financial_valuation_measures()
   </a>
   
 </li>
@@ -892,13 +906,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#auguri.ticker.Ticker.income_statement" class="md-nav__link">
-    income_statement()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#auguri.ticker.Ticker.misc_calendar_events" class="md-nav__link">
     misc_calendar_events()
   </a>
@@ -964,13 +971,6 @@
         <li class="md-nav__item">
   <a href="#auguri.ticker.Ticker.technical_quote_type" class="md-nav__link">
     technical_quote_type()
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#auguri.ticker.Ticker.valuation_measures" class="md-nav__link">
-    valuation_measures()
   </a>
   
 </li>
@@ -1376,12 +1376,12 @@ i.a. the company rating and recommendation as well as ratings based on a variety
 </div>
 </div>
 <div class="doc doc-object doc-method">
-<h2 class="doc doc-heading" id="auguri.ticker.Ticker.balance_sheet">
+<h2 class="doc doc-heading" id="auguri.ticker.Ticker.financial_balance_sheet">
 
-<code class="highlight language-python"><span class="n">balance_sheet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">financial_balance_sheet</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span></code>
 
 
-      <a class="headerlink" href="#auguri.ticker.Ticker.balance_sheet" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#auguri.ticker.Ticker.financial_balance_sheet" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents ">
 <p>Balance sheet data for most recent four quarters or four years.</p>
 <p><strong>Parameters:</strong></p>
@@ -1425,12 +1425,12 @@ i.a. the company rating and recommendation as well as ratings based on a variety
 </div>
 </div>
 <div class="doc doc-object doc-method">
-<h2 class="doc doc-heading" id="auguri.ticker.Ticker.cash_flow">
+<h2 class="doc doc-heading" id="auguri.ticker.Ticker.financial_cash_flow">
 
-<code class="highlight language-python"><span class="n">cash_flow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">financial_cash_flow</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span></code>
 
 
-      <a class="headerlink" href="#auguri.ticker.Ticker.cash_flow" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#auguri.ticker.Ticker.financial_cash_flow" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents ">
 <p>Cash flow data for most recent four quarters or four years.</p>
 <p><strong>Parameters:</strong></p>
@@ -1467,6 +1467,83 @@ i.a. the company rating and recommendation as well as ratings based on a variety
 <td><code>DataFrame</code></td>
 <td>
 <p>DataFrame: Cash flow data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h2 class="doc doc-heading" id="auguri.ticker.Ticker.financial_income_statement">
+
+<code class="highlight language-python"><span class="n">financial_income_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span></code>
+
+
+      <a class="headerlink" href="#auguri.ticker.Ticker.financial_income_statement" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents ">
+<p>Income statement data for most recent four quarters or four years.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>period</code></td>
+<td><code>str</code></td>
+<td>
+<p>Display either quarterly (<code>'q'</code>) or annual (<code>'a'</code>) data.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>DataFrame: Income statement data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h2 class="doc doc-heading" id="auguri.ticker.Ticker.financial_valuation_measures">
+
+<code class="highlight language-python"><span class="n">financial_valuation_measures</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+
+      <a class="headerlink" href="#auguri.ticker.Ticker.financial_valuation_measures" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents ">
+<p>Valuation measures for most recent four quarters as well as the most recent date.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>DataFrame: Valuation measures data.</p>
 </td>
 </tr>
 </tbody>
@@ -2139,55 +2216,6 @@ i.a. the company rating and recommendation as well as ratings based on a variety
 </div>
 </div>
 <div class="doc doc-object doc-method">
-<h2 class="doc doc-heading" id="auguri.ticker.Ticker.income_statement">
-
-<code class="highlight language-python"><span class="n">income_statement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">period</span><span class="p">)</span></code>
-
-
-      <a class="headerlink" href="#auguri.ticker.Ticker.income_statement" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents ">
-<p>Income statement data for most recent four quarters or four years.</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>period</code></td>
-<td><code>str</code></td>
-<td>
-<p>Display either quarterly (<code>'q'</code>) or annual (<code>'a'</code>) data.</p>
-</td>
-<td><em>required</em></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>DataFrame</code></td>
-<td>
-<p>DataFrame: Income statement data.</p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="doc doc-object doc-method">
 <h2 class="doc doc-heading" id="auguri.ticker.Ticker.misc_calendar_events">
 
 <code class="highlight language-python"><span class="n">misc_calendar_events</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
@@ -2510,34 +2538,6 @@ Defaults to <code>None</code>.</p>
 <td><code>Dict</code></td>
 <td>
 <p>Dict: Quote type information.</p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="doc doc-object doc-method">
-<h2 class="doc doc-heading" id="auguri.ticker.Ticker.valuation_measures">
-
-<code class="highlight language-python"><span class="n">valuation_measures</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
-
-
-      <a class="headerlink" href="#auguri.ticker.Ticker.valuation_measures" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents ">
-<p>Valuation measures for most recent four quarters as well as the most recent date.</p>
-<p><strong>Returns:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>DataFrame</code></td>
-<td>
-<p>DataFrame: Valuation measures data.</p>
 </td>
 </tr>
 </tbody>
