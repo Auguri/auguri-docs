@@ -313,6 +313,18 @@
   
   
     <li class="md-nav__item">
+      <a href="trends/" class="md-nav__link">
+        GoogleTrends
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="preload/" class="md-nav__link">
         Preload
       </a>
@@ -402,9 +414,8 @@
 <p>This is the documentation for project <a href="https://github.com/Auguri/auguri"><code>Auguri</code></a>.</p>
 <h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
 <p>Access permission to <a href="https://github.com/Auguri/auguri"><code>Auguri</code></a> source code is required.</p>
-<div class="highlight"><pre><span></span><code>git clone git@github.com:Auguri/auguri.git
+<div class="highlight"><pre><span></span><code>pip install git+git@github.com:Auguri/auguri.git
 git clone git@github.com:Auguri/stockdata.git  <span class="c1"># predefined stock data</span>
-pip install ./auguri
 </code></pre></div>
 <h2 id="basic-usages">Basic Usages<a class="headerlink" href="#basic-usages" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">auguri</span>
@@ -415,14 +426,28 @@ pip install ./auguri
 
 <span class="c1"># core class auguri.Ticker provides many data acquisition methods</span>
 <span class="n">ticker</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">Ticker</span><span class="p">(</span><span class="s1">&#39;AAPL&#39;</span><span class="p">)</span>
-<span class="n">history</span> <span class="o">=</span> <span class="n">ticker</span><span class="o">.</span><span class="n">history</span><span class="p">()</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">ticker</span><span class="o">.</span><span class="n">technical_history</span><span class="p">()</span>
 </code></pre></div>
 <h2 id="code-references">Code References<a class="headerlink" href="#code-references" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="crypto/">Crypto</a></li>
-<li><a href="equity/">Equity</a></li>
-<li><a href="ticker/">Ticker</a></li>
-<li><a href="preload/">Preload</a></li>
+<li><a href="crypto/">Crypto</a>
+<div class="highlight"><pre><span></span><code><span class="n">btc</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">crypto</span><span class="o">.</span><span class="n">get_daily</span><span class="p">(</span><span class="s1">&#39;BTC&#39;</span><span class="p">)</span>
+</code></pre></div></li>
+<li><a href="equity/">Equity</a>
+<div class="highlight"><pre><span></span><code><span class="n">stocks</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">equity</span><span class="o">.</span><span class="n">filter_stocks</span><span class="p">(</span><span class="s1">&#39;day_gainers&#39;</span><span class="p">)</span>
+</code></pre></div></li>
+<li><a href="ticker/">Ticker</a>
+<div class="highlight"><pre><span></span><code><span class="n">ticker</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">Ticker</span><span class="p">(</span><span class="s1">&#39;AAPL&#39;</span><span class="p">)</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">ticker</span><span class="o">.</span><span class="n">technical_history</span><span class="p">()</span>
+</code></pre></div></li>
+<li><a href="trends/">Google Trends</a>
+<div class="highlight"><pre><span></span><code><span class="n">trends</span> <span class="o">=</span> <span class="n">auguri</span><span class="o">.</span><span class="n">GoogleTrends</span><span class="p">([</span><span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">])</span>
+<span class="n">trends</span><span class="o">.</span><span class="n">interest_over_time</span><span class="p">()</span>
+</code></pre></div></li>
+<li><a href="preload/">Preload</a><blockquote>
+<p>List of preloaded third-party packages.</p>
+</blockquote>
+</li>
 </ul>
 <h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
 <p>This project is licensed under the terms of the MIT license.</p>

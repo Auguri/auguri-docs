@@ -471,6 +471,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#auguri.ticker.Ticker.fundamental_institutional_activity" class="md-nav__link">
+    fundamental_institutional_activity()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#auguri.ticker.Ticker.fundamental_key_stats" class="md-nav__link">
     fundamental_key_stats()
   </a>
@@ -600,6 +607,18 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trends/" class="md-nav__link">
+        GoogleTrends
+      </a>
     </li>
   
 
@@ -845,6 +864,13 @@
         <li class="md-nav__item">
   <a href="#auguri.ticker.Ticker.fundamental_institution_ownership" class="md-nav__link">
     fundamental_institution_ownership()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auguri.ticker.Ticker.fundamental_institutional_activity" class="md-nav__link">
+    fundamental_institutional_activity()
   </a>
   
 </li>
@@ -1938,12 +1964,33 @@ i.a. the company rating and recommendation as well as ratings based on a variety
 <div class="doc doc-object doc-method">
 <h2 class="doc doc-heading" id="auguri.ticker.Ticker.fundamental_insider_transactions">
 
-<code class="highlight language-python"><span class="n">fundamental_insider_transactions</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="n">fundamental_insider_transactions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">range</span><span class="p">)</span></code>
 
 
       <a class="headerlink" href="#auguri.ticker.Ticker.fundamental_insider_transactions" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents ">
 <p>Transactions by the insiders of the symbol.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>range</code></td>
+<td><code>int</code></td>
+<td>
+<p>Number of days from now to query insider transactions. Larger number takes longer to query.</p>
+</td>
+<td><em>required</em></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Returns:</strong></p>
 <table>
 <thead>
@@ -1985,6 +2032,34 @@ i.a. the company rating and recommendation as well as ratings based on a variety
 <td><code>DataFrame</code></td>
 <td>
 <p>DataFrame: Owners data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h2 class="doc doc-heading" id="auguri.ticker.Ticker.fundamental_institutional_activity">
+
+<code class="highlight language-python"><span class="n">fundamental_institutional_activity</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+
+
+      <a class="headerlink" href="#auguri.ticker.Ticker.fundamental_institutional_activity" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents ">
+<p>Recent transactions by the institution holders of the symbol.</p>
+<p><strong>Returns:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>DataFrame</code></td>
+<td>
+<p>DataFrame: Institutional activity data.</p>
 </td>
 </tr>
 </tbody>
@@ -2580,13 +2655,13 @@ Defaults to <code>None</code>.</p>
           </a>
         
         
-          <a href="../preload/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../trends/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Preload
+                GoogleTrends
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
